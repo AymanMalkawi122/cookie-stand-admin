@@ -88,5 +88,3 @@ function LastStand(props) {
   )
 }
 
-
-// export default Home;
