@@ -27,7 +27,7 @@ export default function Home() {
         <Header />
         <main className="flex flex-col items-center py-4 space-y-8 flex-grow">
           <Form handler={submitHandler} />
-          <Stands stands={stands} />
+          <ReportTable stands={stands} />
 
         </main>
         <footer className="p-4 mt-8 bg-green-500 text-black-50" >
@@ -92,11 +92,11 @@ function Stand(props){
   )
 }
 
-function Stands(props) {
+function ReportTable(props) {
   
   if(props.stands.length == 0)
   return (
-        <p className="text-xl text-center">{"no stands added yet"}</p>
+    <h2>No Cookie Stands Available</h2>
   )
 
   let stands = []
